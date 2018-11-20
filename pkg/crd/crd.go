@@ -15,6 +15,7 @@ import (
 	"k8s.io/apimachinery/pkg/util/wait"
 )
 
+// CreateOrUpdateCRD install or update the given CRD definition to the API Server
 func CreateOrUpdateCRD(
 	clientset apiextensionsclient.Interface,
 	definition *apiextensionsv1beta1.CustomResourceDefinition) error {

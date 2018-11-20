@@ -8,11 +8,15 @@ import (
 	"github.com/iSofiane/flink-on-k8s-operator/pkg/apis/flinkoperator.k8s.io"
 )
 
+// Version is the version of the FlinkApplication CRD
 const Version = "v1alpha1"
 
 var (
+	//ScemeBuilder expression
 	SchemeBuilder = runtime.NewSchemeBuilder(addKnownTypes)
-	AddToScheme   = SchemeBuilder.AddToScheme
+
+	// AddToSceme expression
+	AddToScheme = SchemeBuilder.AddToScheme
 )
 
 // SchemeGroupVersion is the group version used to register these objects.

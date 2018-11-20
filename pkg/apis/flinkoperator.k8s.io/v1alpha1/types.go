@@ -41,7 +41,7 @@ type FlinkApplicationSpec struct {
 	Taskmanager TaskmanagerSpec `json:"taskmanager"`
 }
 
-// DriverSpec is specification of the driver.
+// JobmanagerSpec is specification of the jobmanager.
 type JobmanagerSpec struct {
 	// ServiceAccount is the name of the Kubernetes service account used by the driver pod
 	// when requesting executor pods from the API server.
@@ -51,7 +51,7 @@ type JobmanagerSpec struct {
 	JavaOptions *string `json:"javaOptions,omitempty"`
 }
 
-// ExecutorSpec is specification of the executor.
+// TaskmanagerSpec is specification of the taskmanager.
 type TaskmanagerSpec struct {
 	// Instances is the number of taskmanager instances.
 	// Optional.

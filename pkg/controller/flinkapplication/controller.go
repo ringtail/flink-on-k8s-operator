@@ -31,6 +31,7 @@ var (
 	keyFunc = cache.DeletionHandlingMetaNamespaceKeyFunc
 )
 
+// Controller is the controller of the FlinkApplication
 type Controller struct {
 	crdClient        crdclientset.Interface
 	kubeClient       clientset.Interface

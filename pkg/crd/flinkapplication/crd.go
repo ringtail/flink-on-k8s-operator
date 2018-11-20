@@ -20,6 +20,7 @@ const (
 	FullName  = Plural + "." + Group
 )
 
+// GetCRD return an apiextensionsv1beta1.CustomResourceDefinition struct
 func GetCRD() *apiextensionsv1beta1.CustomResourceDefinition {
 	return &apiextensionsv1beta1.CustomResourceDefinition{
 		ObjectMeta: metav1.ObjectMeta{
